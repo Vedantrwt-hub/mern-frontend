@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: " https://ai-interviewer-4-q1cr.onrender.com",
+  baseURL: "https://ai-interviewer-6.onrender.com/",
   withCredentials: true,
 });
 
