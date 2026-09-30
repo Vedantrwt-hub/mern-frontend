@@ -1,6 +1,7 @@
 import { Navigate } from "react-router";
 import { useAuth } from "../hook/userAuth";
 
+
 const Protected = ({ children }) => {
   const { user, loading } = useAuth();
 
@@ -14,5 +15,5 @@ const Protected = ({ children }) => {
 
   return children;
 };
-  
+
 export default Protected;
