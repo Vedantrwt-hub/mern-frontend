@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://ai-interviewer-17.onrender.com",
+  baseURL: "https://ai-interviewer-backend-2.onrender.com",
   withCredentials: true,
 });
 
@@ -59,7 +59,7 @@ export const getAllInterviewReports = async () => {
 
 export const generateResumePdf = async (interviewId) => {
   const response = await fetch(
-    `https://ai-interviewer-17.onrender.com/api/interview/resume/pdf/${interviewId}`,
+    `https://ai-interviewer-backend-2.onrender.com/api/interview/resume/pdf/${interviewId}`,
     {
       method: "POST",
       credentials: "include",
